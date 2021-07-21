@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bluetoothdemo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/btn_issupport_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否支持蓝牙"
+        android:onClick="isSupportBluetooth" />
+    <Button
+        android:id="@+id/btn_status_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="蓝牙状态查看"
+        android:onClick="checkBluetoothStatus" />
+    <Button
+        android:id="@+id/btn_turn_on_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开蓝牙"
+        android:onClick="turnOnBluetooth" />
+    <Button
+        android:id="@+id/btn_turn_off_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关掉蓝牙"
+        android:onClick="turnOffBluetooth" />
+    <Button
+        android:id="@+id/btn_show_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置设备蓝牙可见"
+        android:onClick="showBluetooth" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看设备"
+        android:id="@+id/btn_scan_device"
+        android:onClick="scanBluetoothDevice"
+        />
+
+</LinearLayout>
